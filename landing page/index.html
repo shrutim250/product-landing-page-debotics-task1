@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" /> 
+    <title>TEMPLATE DESIGN</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">   
+            <div class="nav__logo">
+                <img class="logo" src="./assests/logo.png" alt="logo">
+                <a href="#"><span>TEMPLATE DESIGN </span></a>
+            </div>
+            <div class="nav_content">
+                <ul class="nav__links" id="nav-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <button>Sign In</button>
+            </div>
+            <div class="lines"> 
+                <img class="lines"  src="./assests/lines.png" alt="lines.png"/>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header_contain">
+        <div id="container">
+            <!-- The `span` elements will be added here -->
+        </div>
+        <div class="div_1">
+            <h1>Welcome.</h1>
+            <div class="search-container">
+                <input type="search"/>
+                <img  class="search_icon" src="./assests/search_icon.png">
+            </div>
+            <div class="buttons">
+                <button class="free_trial"><span>FREE TRIAL</span></button>
+                <button class="see_more">See More</button>
+            </div>
+        </div>
+        <div class="div_2">
+            <img class="div_2img" src="./assests/circle.jpg"/>
+            <h2>Landing Page</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>
+                Eaque porro odio iste aliquam a temporibus sunt quisquam enim, <br/>
+                sequi dolorem adipisci, blanditiis ducimus non recusandae quod hic, <br/>
+                beatae cum reiciendis!</p>
+        </div>
+        <div id="cursor"></div>
+    </header>
+
+    <script>
+        for (var i = 0; i < 150; i++) {
+            let box = document.createElement('span'); // Corrected 'span' to string
+            document.getElementById("container").appendChild(box); // Corrected method name
+        }
+        let cursor = document.getElementById('cursor');
+        window.onmousemove = function(e) {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        };
+    </script>
+</body>
+</html>
